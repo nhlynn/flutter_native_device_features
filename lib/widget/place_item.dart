@@ -23,8 +23,15 @@ class PlaceItem extends StatelessWidget {
       ),
       title: Text(
         place.title,
-        style:
-            TextStyle(color: Theme.of(context).colorScheme.onBackground),
+        style: TextStyle(
+          color: Theme.of(context).colorScheme.onBackground,
+          fontSize: 20,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+      subtitle: Text(
+        place.placeLocation.address,
+        style: TextStyle(color: Theme.of(context).colorScheme.onBackground),
       ),
     );
   }
